@@ -42,10 +42,13 @@ while counter < x+1
     U(counter-1,counter) = beta(counter-1);
     counter = counter+1;
 end
+U(y,x) = gamma(x);
 
 inv_L = get_invL (L,y,x);
 
 inv_A = get_invA(U,inv_L,y,x);
 
-
+fileID = fopen('AERSP313_Project2_Outputs.txt','wt');
+fprintf(fileID, 'The matix L is:\n');
+output(L,y);
 
