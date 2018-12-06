@@ -1,7 +1,11 @@
 
 
 
-function inv_L = get_invL(L,y,x)
+function inv_L = get_invL(L)
+
+%Row, column counters for the matrix
+[y,x] = size(L);
+
 
 Z = zeros(x);
 B = eye(x);

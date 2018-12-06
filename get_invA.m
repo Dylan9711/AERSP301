@@ -2,7 +2,12 @@
 
 
 
-function inv_A = get_invA(U,Z,y,x)
+function inv_A = get_invA(U,Z)
+
+%Row, column counters for the matrix
+[y,x] = size(U);
+
+
 inv_A = zeros(x);
 A_x = x;
 while A_x>0
