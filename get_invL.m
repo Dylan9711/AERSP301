@@ -17,7 +17,7 @@ z_y = 1;
     sum = 0;
     
         while c_1 < z_y %Get the sume of elements after minus
-            sum = sum + L(z_y,z_x);
+            sum = sum + L(z_y,c_1)*Z(c_1,z_x);
             c_1 = c_1+1;
         end
 

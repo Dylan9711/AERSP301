@@ -1,6 +1,14 @@
 % Input:NULL
 % Output:Inverse of matrix A
-
+% X>____________________________
+% Y|                           |
+%  |                           |
+%  |                           |
+%  |                           |
+%  |                           |
+%  |                           |
+%  |                           |
+%  -----------------------------
 clc
 clear
 
@@ -37,7 +45,7 @@ end
 
 inv_L = get_invL (L,y,x);
 
-inv_A = get_invA(U,Z,y,x);
+inv_A = get_invA(U,inv_L,y,x);
 
 
 
